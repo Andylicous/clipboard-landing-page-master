@@ -1,0 +1,303 @@
+/* Frontend Mentor Styles */
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+
+/* My styles */
+
+:root {
+    --strongCyan: hsl(171, 66%, 44%);
+    --lightBlue: hsl(233, 100%, 69%);
+    --darkGrayishBlue: hsl(210, 10%, 33%);
+    --GrayishBlue: hsl(201, 11%, 66%);
+    --lightGray: hsl(220, 18%, 97%);
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    background: url(/images/bg-header-mobile.png)  no-repeat center top;
+    background-size:contain;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--darkGrayishBlue)
+}
+
+h1 {
+    font-size: 1.875rem;
+    line-height: 2.375rem;
+}
+
+h2 {
+    font-size: 1.6875rem;
+    line-height: 2.1875rem;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    margin-bottom: 24px;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 26px;
+    color: var(--GrayishBlue)
+}
+
+/* Utilities */
+
+.container {
+    padding: 0 32px;
+    margin: 0 auto;
+}
+
+.btn {
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.1875rem;
+    font-weight: 700;
+    width:100%;
+    padding:0;
+    border: none;
+    border-radius: 2.215rem;
+    padding: 1.25rem 0 1.25rem 0;
+}
+
+.btnPrimary {
+    background-color:var(--strongCyan);
+    margin-bottom: 24px;
+    box-shadow: 0px 6px 8px 4px rgba(38, 186, 164, 0.16);
+}
+
+.btnPrimary:hover {
+    background-color:#60CBB9;
+}
+
+.btnSecondary {
+    background-color:var(--lightBlue);
+    box-shadow: 0px 6px 8px 4px rgba(97, 115, 255, 0.16);    
+}
+
+.btnSecondary:hover {
+    background-color:#8896FF;
+}
+
+/* Mobile styles */
+
+#heroSection {
+    max-width: 728px;
+    margin-bottom:168px;
+}
+
+#heroSection .logo {
+    margin-bottom: 72px;
+}
+
+#heroSection h1 {
+    margin-bottom: 24px;
+}
+
+#heroSection .preamble {
+    margin-bottom: 48px;
+}
+
+.heroContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 124px;
+    text-align: center;
+}
+
+#snippetSection {
+    max-width: 700px;
+    text-align: center;
+}
+
+#snippetSection p {
+    margin-bottom: 72px;
+}
+
+#uspSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 200px;
+    text-align: center;
+}
+
+#uspSection img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 64px;
+}
+
+#uspSection p {
+    margin-bottom: 56px;
+}
+
+#anywhereSection {
+    margin-bottom: 130px;
+    text-align: center;
+}
+
+#anywhereSection p {
+    margin-bottom: 72px;
+}
+
+#workflowSection {
+    margin-bottom: 130px;
+    text-align: center;
+}
+
+.workflow {
+    margin-top: 96px;
+}
+
+.workflowItem img {
+    margin: 0 auto;
+    padding-bottom: 48px;
+}
+
+.workflowItem  {
+    margin-bottom: 48px;
+}
+
+#companySection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 160px;
+}
+
+#companySection img {
+    max-width: 138px;
+    width: 50%;
+    margin-bottom: 64px;
+}
+
+#ctaSection {
+    text-align: center;
+    margin-bottom: 168px;
+}
+
+#ctaSection p {
+    margin-bottom: 48px;
+}
+
+#footerSection {
+    background-color: var(--lightGray);
+    padding-top: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#footerSection a {
+    color:var(--GrayishBlue);
+    text-decoration: none;
+    font-size: 1.125rem;
+}
+
+#footerSection ul {
+    margin: 0;
+}
+
+#footerSection ul li {
+    margin-bottom: 32px;
+}
+
+#footerSection ul {
+    padding: 0;
+}
+
+#footerSection img {
+    margin-bottom: 48px;
+}
+
+.footerSocial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+}
+
+/* Tablet styles */
+
+@media screen and (min-width:600px) {
+    body {
+        background: url(/images/bg-header-desktop.png)  no-repeat center top;
+        background-size: contain;
+    }
+
+    .hero {
+        padding:124px 32px 0 32px;
+        text-align: center;
+    }
+    .btn {
+        width: 224px;
+    }
+
+    .btnPrimary {
+        margin-bottom: 0;
+    }
+    .heroButtons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 24px
+    }
+
+    #companySection {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #companySection img {
+        justify-self: center;
+        align-self: center;
+    }
+}
+
+/* Desktop and up styles */
+@media screen and (min-width:900px) {
+    p {
+        font-size: 1.25rem;
+        line-height: 140%;
+        letter-spacing: 0.01em;
+
+    }
+
+    #uspSection {
+        text-align: left;
+        flex-direction: row;
+        gap:56px;
+        margin-bottom: 160px;
+    }
+
+    #uspSection img {
+        width: 569px;
+        height: auto;
+    }
+}
+@media screen and (min-width:1200px) {
+    #uspSection img {
+        width: 752px;
+        height: auto;
+    }
+}
